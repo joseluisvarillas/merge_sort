@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #000000;
+}
+
+.VisualizationMainPage #mainContent {
+
+	background: url("fondoP.png") no-repeat center center/cover;;
+	overflow: scroll;
+}
+
+.VisualizationMainPage #algoControlSection
+{
+	background: url("connectwork.png") repeat center center;
+	color:#88631e; 
+	width: 2000;
+}
+
+
+.VisualizationMainPage #generalAnimationControlSection
+{
+	background: url("connectwork.png") repeat center center;
+	color:#88631e; 
+	width:2000;
+}
+
+.VisualizationMainPage  #header { 
+	background: url("connectwork.png") repeat center center; 
+	color:#88631e;
+	padding: 0 10px 0 20px; 
+  
+} 
+ 
+.VisualizationMainPage #header  A:visited 
+	  { text-decoration:none;
+        color:#ffCC33; 
+	   }
+	   
+	   
+.VisualizationMainPage #header h1 {
+	margin: 0; 
+	padding: 10px 0; 
+	}
+	   
+.VisualizationMainPage #header A:link {
+    text-decoration:none;
+    color:#ffCC33;
+	}
+	
+	
+.VisualizationMainPage #container {
+	background: url("connectwork.png") no-repeat center center/cover;;
+	margin: 0 auto; 
+	text-align: left; 
+}	
+	
+	
+.VisualizationMainPage #footer  A:visited { text-decoration:none;
+        color:ffcc33; 
+}
+
+.VisualizationMainPage #footer A:link {
+    text-decoration:none;
+	color:#ffCC33;
+}
+.VisualizationMainPage #mainContent h1{
+	padding: 0 22px; 
+	background: #ee0a0a;
+	color:#006633
+}
+.VisualizationMainPage #mainContent h2{
+	padding: 0 20px; 
+	background: #4464f1;
+	color:#006633
+}
+.VisualizationMainPage #mainContent h3{
+	padding: 0 20px; 
+	background: #eb0909;
+	color:#006633
+}
+.VisualizationMainPage #footer { 
+	padding: 0 10px;
+    background: url("connectwork.png") repeat center center;; 
+	color:#f8f8f8;
+} 
+.VisualizationMainPage #footer p {
+	margin: 0; 	padding: 10px 0; 
+}
+
+EM {text-decoration: bold;}
+
+	
+*{box-sizing:border-box;margin:0;padding:0;}
+@font-face{
+    font-family:alarm;
+    src:url(alarm.ttf);
+}

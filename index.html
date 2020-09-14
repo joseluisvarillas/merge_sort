@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			MERGE SORT
+		</title>
+		
+		<!-- css sheet for how the page is laid out -->
+		
+		<link rel="stylesheet" href="visualizationPageStyle.css">
+			
+		<!-- jqueury stuff.  Only used for the animation speed slider. -->
+		<link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
+		<script src="ThirdParty/jquery-1.5.2.min.js"></script>
+		<script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+				
+		<!-- Javascript for the actual visualization code -->
+		<!-- Estan en la carpeta AnimationLibrary-->
+		<script type = "text/javascript" src = "AnimationLibrary/CustomEvents.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/UndoFunctions.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedObject.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedLabel.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimatedRectangle.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/ObjectManager.js"> </script>
+		<script type = "text/javascript" src = "AnimationLibrary/AnimationMain.js"> </script>
+		<!-- Estan en la carpeta AlgorithmLibrary -->
+		<script type = "text/javascript" src = "AlgorithmLibrary/Algorithm.js"> </script>
+		<script type = "text/javascript" src = "AlgorithmLibrary/ComparisonSort.js"> </script> 
+	 </head> 
+	
+	<body onload="init();"  class="VisualizationMainPage">
+		
+		<div id = "container">
+			
+			<div id="header">  
+				<h1><pre><font size=7><b>                	 MERGESORT</b>  </font>  </pre></h1>
+			</div>
+			
+			<div id = "mainContent"> 
+				
+				<div id = "algoControlSection" ><b>
+					
+					<!-- comparisionsort -->
+					<table id="AlgorithmSpecificControls"> </table> </b>	
+				</div>
+					
+									
+				<canvas id="canvas" width="2000" height="500">
+					
+				</canvas>
+
+				<div id = "generalAnimationControlSection" >
+					
+					<!-- animationmain.js -->
+
+					<B><table id="GeneralAnimationControls">  </table>		</B>
+				</div>
+
+				
+			</div> <!-- mainContent -->
+			
+			<div id="footer">  
+				<pre><font size = 5><a>
+						<b>PSEUDOCODIGO MERGESORT </b></font>
+
+							Funcion merge(A[],inicio, fin)											
+							|	Si(inicio < fin)															
+							|	|	med <- (inicio + fin)/2											<font size = 5>     ESTUDIANTES: </font>
+							|	|	merge(inicio, med)												<font size = 5>-> JOSE LUIS VARILLAS MELENDEZ	</font>										
+							|	|	merge(med+1, fin)												<font size = 5>-> YAMILE CONCEPCION SILVA JARAMILLO</font>								
+							|	|	insertar <- inicio												<font size = 5>-> ANDRES GABRIEL SALCEDO PATRONI</font>
+							|	|	izq <- inicio													<font size = 5>-> ALESSANDRO GREGORY VALENZUELA MARTINEZ</font>
+							|	|	der <- med+1 													<font size = 5>-> ERNESTO ZENOBIO BARRIAS PEÑA</font>
+							|	|	Mientras (insertar <= fin)	
+							|	|	|	Si (izq <med & (der > fin o A[izq ] <= A[der])
+							|	|	|	|	AUX[insertar] <- A[izq ]
+							|	|	|	|	insert <- insert + 1 
+							|	|	|	|	izq <- izq +1
+							|	|	|	Sino 
+							|	|	|	|	AUX[insertar] <- A[der]
+							|	|	|	|	insert <- insert + 1
+							|	|	|	|	der <- der +1 
+							|	|	|	Fin_Si
+							|	|	Fin_Mientras
+							|	|	Para insertar desde inicio hasta fin
+							|	|	|	A[insertar] <- AUX[insert]						:
+							|	|	Fin_Para											   
+							|	Sino 													  
+							|	|	break												
+							|	Fin_Si														
+							Fin_Funcion 												
+				</a></pre>
+			</div>
+			
+
+		</div><!-- container -->
+	</body>
+</html>
