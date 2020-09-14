@@ -227,8 +227,21 @@ ComparisonSort.prototype.mergeSortCallback = function(event)
 	this.animationManager.clearHistory();
 	
 	this.commands = new Array();
+	let star = performance.now();
 	this.doMergeSort(0, this.array_size-1);
+	let end = performance.now();
 	this.animationManager.StartNewAnimation(this.commands);
+
+	var tableEntry = document.createElement("td");
+	var controlBar = document.getElementById("AlgorithmSpecificControls");
+	tableEntry = document.createElement("td");
+	var txtNode = document.createTextNode("tiempo : "); 
+	tableEntry.appendChild(txtNode);
+	controlBar.appendChild(tableEntry);
+	tableEntry = document.createElement("td");
+	var txtNode = document.createTextNode(end - star); 
+	tableEntry.appendChild(txtNode);
+	controlBar.appendChild(tableEntry);
 }
 
 ComparisonSort.prototype.doMergeSort = function(low,high)
